@@ -1,0 +1,17 @@
+{
+  "name": "ts-weather",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn tslint -c tslint.json './**/*.ts'"
+    }
+  }
+}
